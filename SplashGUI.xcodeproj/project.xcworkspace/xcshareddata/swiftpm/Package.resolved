@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "splash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DevFarid/Splash",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a40f1888453d1db0204323c782391f89a6f9e0ec"
+      }
+    }
+  ],
+  "version" : 2
+}
