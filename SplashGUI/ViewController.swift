@@ -6,14 +6,28 @@
 //
 
 import UIKit
+import Foundation
+import Splash
 
 class ViewController: UIViewController {
 
+    @IBOutlet var userCodeInput: UITextView!
+    
+    @IBOutlet var sysSpitter: UITextView!
+    
+    static let highligher = SyntaxHighlighter(format: HTMLOutputFormat())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func transform(_ sender: UIButton) {
+        guard let input = userCodeInput.text else { return }
+        
+        let output = ViewController.highligher.highlight(input)
+        sysSpitter.text = output
+    }
+    
 }
 
