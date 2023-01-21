@@ -21,6 +21,7 @@
 		904274B6297712CC00A24F7E /* SplashImageGen in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B5297712CC00A24F7E /* SplashImageGen */; };
 		904274B8297712CC00A24F7E /* SplashMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B7297712CC00A24F7E /* SplashMarkdown */; };
 		904274BA297712CC00A24F7E /* SplashTokenizer in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B9297712CC00A24F7E /* SplashTokenizer */; };
+		90CB7EE6297C5D6600918B59 /* sundellsColors.css in Resources */ = {isa = PBXBuildFile; fileRef = 90CB7EE5297C5D6600918B59 /* sundellsColors.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		901366DE29770C23002F77C2 /* SplashGUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashGUIUITests.swift; sourceTree = "<group>"; };
 		901366E029770C23002F77C2 /* SplashGUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashGUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		904274BB2977167A00A24F7E /* SplashGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SplashGUI.entitlements; sourceTree = "<group>"; };
+		90CB7EE5297C5D6600918B59 /* sundellsColors.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = sundellsColors.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		901366BC29770C1C002F77C2 /* SplashGUI */ = {
 			isa = PBXGroup;
 			children = (
+				90CB7EE5297C5D6600918B59 /* sundellsColors.css */,
 				904274BB2977167A00A24F7E /* SplashGUI.entitlements */,
 				901366BD29770C1C002F77C2 /* AppDelegate.swift */,
 				901366BF29770C1C002F77C2 /* SceneDelegate.swift */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901366CA29770C23002F77C2 /* LaunchScreen.storyboard in Resources */,
+				90CB7EE6297C5D6600918B59 /* sundellsColors.css in Resources */,
 				901366C729770C23002F77C2 /* Assets.xcassets in Resources */,
 				901366C529770C1C002F77C2 /* Main.storyboard in Resources */,
 			);
