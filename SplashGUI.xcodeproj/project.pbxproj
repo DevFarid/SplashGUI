@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		901366BE29770C1C002F77C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366BD29770C1C002F77C2 /* AppDelegate.swift */; };
 		901366C029770C1C002F77C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366BF29770C1C002F77C2 /* SceneDelegate.swift */; };
-		901366C229770C1C002F77C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366C129770C1C002F77C2 /* ViewController.swift */; };
+		901366C229770C1C002F77C2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366C129770C1C002F77C2 /* SplashViewController.swift */; };
 		901366C529770C1C002F77C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901366C329770C1C002F77C2 /* Main.storyboard */; };
 		901366C729770C23002F77C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901366C629770C23002F77C2 /* Assets.xcassets */; };
 		901366CA29770C23002F77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901366C829770C23002F77C2 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,8 @@
 		904274B6297712CC00A24F7E /* SplashImageGen in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B5297712CC00A24F7E /* SplashImageGen */; };
 		904274B8297712CC00A24F7E /* SplashMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B7297712CC00A24F7E /* SplashMarkdown */; };
 		904274BA297712CC00A24F7E /* SplashTokenizer in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B9297712CC00A24F7E /* SplashTokenizer */; };
+		90594F00298C4AFA00359C47 /* PlaymakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90594EFF298C4AFA00359C47 /* PlaymakerViewController.swift */; };
+		90A0C5AD298EE7B9007E4C51 /* playmaker in Frameworks */ = {isa = PBXBuildFile; productRef = 90A0C5AC298EE7B9007E4C51 /* playmaker */; };
 		90CB7EE6297C5D6600918B59 /* sundellsColors.css in Resources */ = {isa = PBXBuildFile; fileRef = 90CB7EE5297C5D6600918B59 /* sundellsColors.css */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +47,7 @@
 		901366BA29770C1C002F77C2 /* SplashGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplashGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901366BD29770C1C002F77C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		901366BF29770C1C002F77C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		901366C129770C1C002F77C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		901366C129770C1C002F77C2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		901366C429770C1C002F77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		901366C629770C23002F77C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901366C929770C23002F77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		901366DE29770C23002F77C2 /* SplashGUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashGUIUITests.swift; sourceTree = "<group>"; };
 		901366E029770C23002F77C2 /* SplashGUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashGUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		904274BB2977167A00A24F7E /* SplashGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SplashGUI.entitlements; sourceTree = "<group>"; };
+		90594EFF298C4AFA00359C47 /* PlaymakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaymakerViewController.swift; sourceTree = "<group>"; };
 		90CB7EE5297C5D6600918B59 /* sundellsColors.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = sundellsColors.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +72,7 @@
 				904274BA297712CC00A24F7E /* SplashTokenizer in Frameworks */,
 				904274B2297712CC00A24F7E /* Splash in Frameworks */,
 				904274B4297712CC00A24F7E /* SplashHTMLGen in Frameworks */,
+				90A0C5AD298EE7B9007E4C51 /* playmaker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,11 +116,12 @@
 		901366BC29770C1C002F77C2 /* SplashGUI */ = {
 			isa = PBXGroup;
 			children = (
+				90594EFF298C4AFA00359C47 /* PlaymakerViewController.swift */,
 				90CB7EE5297C5D6600918B59 /* sundellsColors.css */,
 				904274BB2977167A00A24F7E /* SplashGUI.entitlements */,
 				901366BD29770C1C002F77C2 /* AppDelegate.swift */,
 				901366BF29770C1C002F77C2 /* SceneDelegate.swift */,
-				901366C129770C1C002F77C2 /* ViewController.swift */,
+				901366C129770C1C002F77C2 /* SplashViewController.swift */,
 				901366C329770C1C002F77C2 /* Main.storyboard */,
 				901366C629770C23002F77C2 /* Assets.xcassets */,
 				901366C829770C23002F77C2 /* LaunchScreen.storyboard */,
@@ -164,6 +169,7 @@
 				904274B5297712CC00A24F7E /* SplashImageGen */,
 				904274B7297712CC00A24F7E /* SplashMarkdown */,
 				904274B9297712CC00A24F7E /* SplashTokenizer */,
+				90A0C5AC298EE7B9007E4C51 /* playmaker */,
 			);
 			productName = SplashGUI;
 			productReference = 901366BA29770C1C002F77C2 /* SplashGUI.app */;
@@ -239,6 +245,7 @@
 			mainGroup = 901366B129770C1C002F77C2;
 			packageReferences = (
 				904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */,
+				90A0C5AB298EE7B9007E4C51 /* XCRemoteSwiftPackageReference "playmaker" */,
 			);
 			productRefGroup = 901366BB29770C1C002F77C2 /* Products */;
 			projectDirPath = "";
@@ -284,7 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901366C229770C1C002F77C2 /* ViewController.swift in Sources */,
+				901366C229770C1C002F77C2 /* SplashViewController.swift in Sources */,
+				90594F00298C4AFA00359C47 /* PlaymakerViewController.swift in Sources */,
 				901366BE29770C1C002F77C2 /* AppDelegate.swift in Sources */,
 				901366C029770C1C002F77C2 /* SceneDelegate.swift in Sources */,
 			);
@@ -481,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,7 +521,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -646,6 +654,14 @@
 				kind = branch;
 			};
 		};
+		90A0C5AB298EE7B9007E4C51 /* XCRemoteSwiftPackageReference "playmaker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DevFarid/playmaker.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -673,6 +689,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = SplashTokenizer;
+		};
+		90A0C5AC298EE7B9007E4C51 /* playmaker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A0C5AB298EE7B9007E4C51 /* XCRemoteSwiftPackageReference "playmaker" */;
+			productName = playmaker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

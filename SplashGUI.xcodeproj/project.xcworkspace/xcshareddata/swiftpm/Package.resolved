@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "playmaker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DevFarid/playmaker.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f6d98f226f52ca64c93c89fcd27fa2d8ad1be760"
+      }
+    },
+    {
       "identity" : "splash",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/DevFarid/Splash",

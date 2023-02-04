@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 import Splash
 
-class ViewController: UIViewController {
+class SplashViewController: UIViewController {
 
     @IBOutlet var userCodeInput: UITextView!
     
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func transform(_ sender: UIButton) {
         guard let input = userCodeInput.text else { return }
         
-        let output = ViewController.highligher.highlight(input)
+        let output = SplashViewController.highligher.highlight(input)
         sysSpitter.text = output
     }
     
