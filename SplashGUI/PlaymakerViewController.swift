@@ -38,6 +38,8 @@ class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
         if mdFiles.count > 0 {
             directoryContainsMDFiles = true
             self.playgroundIt.isEnabled = true
+        } else {
+            self.feedbackTextView.text = "Input ⟶ \(safelyWrappedURL.relativePath )\n\nNo `.MD` files were found!"
         }
     }
     
