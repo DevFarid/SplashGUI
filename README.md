@@ -27,11 +27,13 @@ Gracefully paste the HTML/CSS code, in your Canvas's HTML/CSS content editor as 
 Again, press the `</>` to switch back to the regular text editor, and now you should see the visual changes.
 ![Results](https://i.imgur.com/gQc6S6y.png "Results")
 
-## <psuedo> option for Digital Flagship's own playmaker
+## Psuedo Code Option
 Inside of a `.MD` format it like this:
+
 ![Psuedo Code Formatting](https://i.imgur.com/IAjAbJd.png "Psuedo Code Formatting")
 
 How it will look inside of a `.playground`
+
 ![Playground Formatting](https://i.imgur.com/vqJqikI.png "Playground Formatting")
 
 ## Image sequence of turning a directory of `.MD` into `.playground`
