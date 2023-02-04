@@ -34,7 +34,7 @@ Inside of a `.MD` format it like this:
 How it will look inside of a `.playground`
 ![Playground Formatting](https://i.imgur.com/vqJqikI.png "Playground Formatting")
 
-## GIF footage of turning a directory of `.MD` into `.playground`
+## Image sequence of turning a directory of `.MD` into `.playground`
 Follow the steps carefully.
 
 Switch to the Playmaker tab.
