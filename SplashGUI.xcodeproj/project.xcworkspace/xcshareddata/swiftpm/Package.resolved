@@ -6,7 +6,7 @@
       "location" : "https://github.com/DevFarid/playmaker.git",
       "state" : {
         "branch" : "main",
-        "revision" : "f6d98f226f52ca64c93c89fcd27fa2d8ad1be760"
+        "revision" : "49bb7035f276a7e274d5bd25816c558b82e5e0af"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/DevFarid/Splash",
       "state" : {
         "branch" : "master",
-        "revision" : "16433d664a3e897d48f3edb3b54ef6400f0f39ed"
+        "revision" : "4283d6981ea8ce3aa9b0b0d8295d646ca2221e44"
       }
     }
   ],
