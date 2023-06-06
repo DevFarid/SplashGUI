@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA2D0F92A2F6D32004136D8 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA2D0F82A2F6D32004136D8 /* Splash */; };
+		7AA2D0FB2A2F6D32004136D8 /* SplashHTMLGen in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA2D0FA2A2F6D32004136D8 /* SplashHTMLGen */; };
+		7AA2D0FD2A2F6D32004136D8 /* SplashImageGen in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA2D0FC2A2F6D32004136D8 /* SplashImageGen */; };
+		7AA2D0FF2A2F6D32004136D8 /* SplashMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA2D0FE2A2F6D32004136D8 /* SplashMarkdown */; };
+		7AA2D1012A2F6D32004136D8 /* SplashTokenizer in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA2D1002A2F6D32004136D8 /* SplashTokenizer */; };
 		901366BE29770C1C002F77C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366BD29770C1C002F77C2 /* AppDelegate.swift */; };
 		901366C029770C1C002F77C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366BF29770C1C002F77C2 /* SceneDelegate.swift */; };
 		901366C229770C1C002F77C2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366C129770C1C002F77C2 /* SplashViewController.swift */; };
@@ -16,11 +21,6 @@
 		901366D529770C23002F77C2 /* SplashGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366D429770C23002F77C2 /* SplashGUITests.swift */; };
 		901366DF29770C23002F77C2 /* SplashGUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366DE29770C23002F77C2 /* SplashGUIUITests.swift */; };
 		901366E129770C23002F77C2 /* SplashGUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901366E029770C23002F77C2 /* SplashGUIUITestsLaunchTests.swift */; };
-		904274B2297712CC00A24F7E /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B1297712CC00A24F7E /* Splash */; };
-		904274B4297712CC00A24F7E /* SplashHTMLGen in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B3297712CC00A24F7E /* SplashHTMLGen */; };
-		904274B6297712CC00A24F7E /* SplashImageGen in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B5297712CC00A24F7E /* SplashImageGen */; };
-		904274B8297712CC00A24F7E /* SplashMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B7297712CC00A24F7E /* SplashMarkdown */; };
-		904274BA297712CC00A24F7E /* SplashTokenizer in Frameworks */ = {isa = PBXBuildFile; productRef = 904274B9297712CC00A24F7E /* SplashTokenizer */; };
 		90594F00298C4AFA00359C47 /* PlaymakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90594EFF298C4AFA00359C47 /* PlaymakerViewController.swift */; };
 		90A0C5AD298EE7B9007E4C51 /* playmaker in Frameworks */ = {isa = PBXBuildFile; productRef = 90A0C5AC298EE7B9007E4C51 /* playmaker */; };
 		90CB7EE6297C5D6600918B59 /* sundellsColors.css in Resources */ = {isa = PBXBuildFile; fileRef = 90CB7EE5297C5D6600918B59 /* sundellsColors.css */; };
@@ -67,12 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				904274B8297712CC00A24F7E /* SplashMarkdown in Frameworks */,
-				904274B6297712CC00A24F7E /* SplashImageGen in Frameworks */,
-				904274BA297712CC00A24F7E /* SplashTokenizer in Frameworks */,
-				904274B2297712CC00A24F7E /* Splash in Frameworks */,
-				904274B4297712CC00A24F7E /* SplashHTMLGen in Frameworks */,
+				7AA2D0FF2A2F6D32004136D8 /* SplashMarkdown in Frameworks */,
+				7AA2D0FB2A2F6D32004136D8 /* SplashHTMLGen in Frameworks */,
 				90A0C5AD298EE7B9007E4C51 /* playmaker in Frameworks */,
+				7AA2D1012A2F6D32004136D8 /* SplashTokenizer in Frameworks */,
+				7AA2D0FD2A2F6D32004136D8 /* SplashImageGen in Frameworks */,
+				7AA2D0F92A2F6D32004136D8 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,12 +164,12 @@
 			);
 			name = SplashGUI;
 			packageProductDependencies = (
-				904274B1297712CC00A24F7E /* Splash */,
-				904274B3297712CC00A24F7E /* SplashHTMLGen */,
-				904274B5297712CC00A24F7E /* SplashImageGen */,
-				904274B7297712CC00A24F7E /* SplashMarkdown */,
-				904274B9297712CC00A24F7E /* SplashTokenizer */,
 				90A0C5AC298EE7B9007E4C51 /* playmaker */,
+				7AA2D0F82A2F6D32004136D8 /* Splash */,
+				7AA2D0FA2A2F6D32004136D8 /* SplashHTMLGen */,
+				7AA2D0FC2A2F6D32004136D8 /* SplashImageGen */,
+				7AA2D0FE2A2F6D32004136D8 /* SplashMarkdown */,
+				7AA2D1002A2F6D32004136D8 /* SplashTokenizer */,
 			);
 			productName = SplashGUI;
 			productReference = 901366BA29770C1C002F77C2 /* SplashGUI.app */;
@@ -244,8 +244,8 @@
 			);
 			mainGroup = 901366B129770C1C002F77C2;
 			packageReferences = (
-				904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */,
 				90A0C5AB298EE7B9007E4C51 /* XCRemoteSwiftPackageReference "playmaker" */,
+				7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */,
 			);
 			productRefGroup = 901366BB29770C1C002F77C2 /* Products */;
 			projectDirPath = "";
@@ -472,7 +472,7 @@
 				CODE_SIGN_ENTITLEMENTS = SplashGUI/SplashGUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DZRSC2B4NK;
+				DEVELOPMENT_TEAM = 8VT6G5338V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SplashGUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,7 +504,7 @@
 				CODE_SIGN_ENTITLEMENTS = SplashGUI/SplashGUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DZRSC2B4NK;
+				DEVELOPMENT_TEAM = 8VT6G5338V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SplashGUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -646,7 +646,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */ = {
+		7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/DevFarid/Splash";
 			requirement = {
@@ -665,29 +665,29 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		904274B1297712CC00A24F7E /* Splash */ = {
+		7AA2D0F82A2F6D32004136D8 /* Splash */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = Splash;
 		};
-		904274B3297712CC00A24F7E /* SplashHTMLGen */ = {
+		7AA2D0FA2A2F6D32004136D8 /* SplashHTMLGen */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = SplashHTMLGen;
 		};
-		904274B5297712CC00A24F7E /* SplashImageGen */ = {
+		7AA2D0FC2A2F6D32004136D8 /* SplashImageGen */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = SplashImageGen;
 		};
-		904274B7297712CC00A24F7E /* SplashMarkdown */ = {
+		7AA2D0FE2A2F6D32004136D8 /* SplashMarkdown */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = SplashMarkdown;
 		};
-		904274B9297712CC00A24F7E /* SplashTokenizer */ = {
+		7AA2D1002A2F6D32004136D8 /* SplashTokenizer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 904274B0297712CC00A24F7E /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 7AA2D0F72A2F6D32004136D8 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = SplashTokenizer;
 		};
 		90A0C5AC298EE7B9007E4C51 /* playmaker */ = {
