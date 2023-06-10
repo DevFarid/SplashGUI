@@ -3,7 +3,7 @@
     <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -28,20 +28,17 @@
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3H-1A-exc">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="854"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-Fa-Zz8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="265" height="34.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-Fa-Zz8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="854"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="275" id="SaG-3v-b3c"/>
-                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="YGY-C0-yAC" firstAttribute="trailing" secondItem="6OB-Fa-Zz8" secondAttribute="trailing" constant="10" id="dOk-gC-dQu"/>
-                                                    <constraint firstItem="6OB-Fa-Zz8" firstAttribute="top" secondItem="YGY-C0-yAC" secondAttribute="top" id="eKv-d1-XK1"/>
-                                                    <constraint firstAttribute="width" constant="275" id="gxe-fW-0KI"/>
-                                                    <constraint firstItem="6OB-Fa-Zz8" firstAttribute="leading" secondItem="YGY-C0-yAC" secondAttribute="leading" id="r83-0P-opV"/>
+                                                    <constraint firstItem="6OB-Fa-Zz8" firstAttribute="leading" secondItem="YGY-C0-yAC" secondAttribute="leading" id="9Ha-J9-kt3"/>
+                                                    <constraint firstItem="6OB-Fa-Zz8" firstAttribute="top" secondItem="YGY-C0-yAC" secondAttribute="top" id="lfj-1e-mc5"/>
+                                                    <constraint firstAttribute="width" constant="275" id="pYI-k6-1xx"/>
+                                                    <constraint firstItem="6OB-Fa-Zz8" firstAttribute="trailing" secondItem="YGY-C0-yAC" secondAttribute="trailing" id="zLp-xF-ze3"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="contentLayoutGuide" id="KXZ-rd-bcd"/>
                                                 <viewLayoutGuide key="frameLayoutGuide" id="YGY-C0-yAC"/>
@@ -329,7 +326,6 @@
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="57" id="CIV-de-XeX"/>
-                                                                    <constraint firstAttribute="width" constant="1041" id="d0H-r8-RPh"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
@@ -354,12 +350,9 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="MLc-ka-JLx" firstAttribute="leading" secondItem="m3H-1A-exc" secondAttribute="trailing" constant="10" id="GPe-aT-dI3"/>
                                             <constraint firstItem="m3H-1A-exc" firstAttribute="leading" secondItem="k4j-q7-Vi0" secondAttribute="leading" id="IU8-8P-nq1"/>
-                                            <constraint firstItem="m3H-1A-exc" firstAttribute="top" secondItem="k4j-q7-Vi0" secondAttribute="top" id="PPV-n4-UbW"/>
-                                            <constraint firstItem="m3H-1A-exc" firstAttribute="top" secondItem="k4j-q7-Vi0" secondAttribute="top" id="TAz-Ry-TFw"/>
-                                            <constraint firstItem="MLc-ka-JLx" firstAttribute="leading" secondItem="m3H-1A-exc" secondAttribute="trailing" constant="10" id="UAH-uN-ngx"/>
-                                            <constraint firstItem="m3H-1A-exc" firstAttribute="leading" secondItem="k4j-q7-Vi0" secondAttribute="leading" id="a5X-a4-PmX"/>
-                                            <constraint firstItem="MLc-ka-JLx" firstAttribute="leading" secondItem="m3H-1A-exc" secondAttribute="trailing" constant="10" id="jhq-aN-UDh"/>
+                                            <constraint firstItem="m3H-1A-exc" firstAttribute="top" secondItem="k4j-q7-Vi0" secondAttribute="top" id="naU-vV-gbY"/>
                                             <constraint firstAttribute="bottom" secondItem="m3H-1A-exc" secondAttribute="bottom" id="vZp-a6-Vad"/>
                                         </constraints>
                                     </stackView>

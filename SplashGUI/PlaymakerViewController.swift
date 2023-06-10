@@ -12,14 +12,14 @@ import playmaker
 //fileNames
 var fileURLs: [URL] = []
 
-class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
+var currentFileSelected: String = ""
 
-    var pickedFolderURL: URL?
+class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
+    
+    
+    //folder path
+    var pickedFolderURL: URL? = nil
     var directoryContainsMDFiles: Bool = false
-    //folder
-    var folderDirectory: URL? = nil
-    
-    
     
     
     @IBOutlet var playgroundIt: UIButton!
@@ -66,29 +66,19 @@ class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
         }
         
         setupFileList()
-        
     }
     
     
     @IBAction func selectFolder(_ sender: Any) {
-        
         let documentPickerController = UIDocumentPickerViewController(documentTypes: [kUTTypeFolder as String], in: .open)
-        
         documentPickerController.delegate = self
-        
         present(documentPickerController, animated: true)
-        
     }
     
     
     @IBAction func saveButton(_ sender: Any) {
-        guard let folderDirectory = folderDirectory else {
-                // Handle the case where fileDirectory is nil or not set
-                return
-        }
-            
         let textToSave = playgroundTextEditor.text ?? ""
-        let fileURL = folderDirectory.appendingPathComponent(fileURLs[0].description)
+        let fileURL = fullFilePath(fileName: currentFileSelected)
         
         do {
             try textToSave.write(to: fileURL, atomically: true, encoding: .utf8)
@@ -350,22 +340,26 @@ class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
         fileButton.setTitle(name, for: .normal)
         fileButton.contentHorizontalAlignment = .left
         fileButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        
+        
+        //add its action
+        fileButton.addTarget(self, action: #selector(openFile(sender:)), for: .touchUpInside)
 
         // Add the button to the view hierarchy.
         fileList.addArrangedSubview(fileButton)
         
     }
     
+    
     func setupFileList() {
-        /*
-         * Re-implement list using a vertical stack of buttons that need to be coded instead of dragged/dropped
-         */
         sortFileList()
         for currentFile in fileURLs {
             createButton(name: currentFile.lastPathComponent.description)
         }
     }
     
+    
+    //called every time a folder is opened from DocumentPicker
     func clearFileList(){
         fileURLs = []
         for fileButton in fileList.arrangedSubviews {
@@ -374,10 +368,39 @@ class PlaymakerViewController: UIViewController, UIDocumentPickerDelegate {
         }
     }
     
+    
     func sortFileList(){
         fileURLs = fileURLs.sorted { $0.lastPathComponent.lowercased() < $1.lastPathComponent.lowercased() }
     }
+    
+    
+    func fullFilePath(fileName: String) -> URL {
+    
+        guard let pickedFolderURL = pickedFolderURL else {
+                // Handle the case where pickedFolderURL is nil or not set
+                exit(0)
+        }
+        let fullFilePath = pickedFolderURL.appendingPathComponent(fileName)
+        
+        return fullFilePath
+    }
+    
 
+    func readFile(fileName: String) -> String{
+        guard let fileContents = try? String(contentsOf: fullFilePath(fileName: fileName), encoding: .utf8) else { exit(0) }
+        updateSelectedFile(selectedFile: fileName)
+        return fileContents
+    }
+    
+    
+    func updateSelectedFile(selectedFile: String) {
+        currentFileSelected = selectedFile
+    }
+    
+    
+    @objc func openFile(sender: UIButton){
+        playgroundTextEditor.text = readFile(fileName: sender.titleLabel!.text!)
+    }
 }
 
 extension URL {
