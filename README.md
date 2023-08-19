@@ -1,9 +1,10 @@
 # SplashGUI
-## Made by John Sundell, modified by Farid Kamizi.
+## Created by 6ixEyes
+## APIs Provided by: John Sundell's Splash & Paul Hudson.
 
 ## Purpose of the program.
-Allows the user to format Swift syntax to HTML output.
-ALlows the user to turn .md files into a .playground.
+Allows the user to format Swift syntax to HTML output using Splash.
+ALlows the user to turn .md files into a .playground using playmaker.
 
 ## Problems fixed by SplashGUI
 Imagine you are writing an article for the Swift courses we offer, and you have to include programming expression and statements in your article.
