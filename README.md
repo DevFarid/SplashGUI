@@ -1,6 +1,6 @@
 # SplashGUI
 ## Created by 6ixEyes
-## APIs Provided by: John Sundell's Splash & Paul Hudson.
+## APIs Provided by: John Sundell's Splash & Paul Hudson's Playmaker.
 
 ## Purpose of the program.
 Allows the user to format Swift syntax to HTML output using Splash.
